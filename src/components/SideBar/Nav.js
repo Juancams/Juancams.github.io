@@ -1,6 +1,8 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from '../Scroll';
+// 1. Asegúrate de importar tu GIF aquí (ajusta la ruta si es necesario)
+import shinGif from '../../assets/images/pato.gif';
 
 export default function Nav({ sections = [] }) {
   return (
@@ -23,6 +25,24 @@ export default function Nav({ sections = [] }) {
             );
           })}
         </Scrollspy>
+
+        {/* 2. Añadimos el GIF aquí, fuera del Scrollspy para que no interfiera */}
+        <li style={{
+          textAlign: 'center',
+          marginTop: '30px',
+          paddingBottom: '20px',
+          listStyle: 'none'
+        }}>
+          <img
+            src={shinGif}
+            alt="Shin Chan"
+            style={{
+              width: '150px',   // Ajusta el tamaño a tu gusto
+              height: 'auto',
+              display: 'inline-block'
+            }}
+          />
+        </li>
       </ul>
     </nav>
   );
