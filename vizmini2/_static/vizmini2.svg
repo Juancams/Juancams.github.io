@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108">
+  <!-- Icono de la app (res/drawable/ic_launcher_*.xml) en SVG -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A1626"/>
+      <stop offset="0.5" stop-color="#0F2C44"/>
+      <stop offset="1" stop-color="#0B6574"/>
+    </linearGradient>
+    <clipPath id="round"><rect width="108" height="108" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="108" height="108" fill="url(#bg)"/>
+    <path d="M18,30h72M18,42h72M18,54h72M18,66h72M18,78h72M30,18v72M42,18v72M54,18v72M66,18v72M78,18v72"
+          stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="0.6" fill="none"/>
+    <g transform="translate(-4.8 1.5) scale(1.05)">
+      <path d="M56,58L56,36" stroke="#4FA3FF" stroke-width="4" stroke-linecap="round"/>
+      <path d="M56,29L61.5,38L50.5,38Z" fill="#4FA3FF"/>
+      <path d="M56,58L72,67" stroke="#FF5A5F" stroke-width="4" stroke-linecap="round"/>
+      <path d="M78,70.5L68.4,71.1L73.9,61.6Z" fill="#FF5A5F"/>
+      <path d="M56,58L40,67" stroke="#3DDC97" stroke-width="4" stroke-linecap="round"/>
+      <path d="M34,70.5L38.1,61.6L43.6,71.1Z" fill="#3DDC97"/>
+      <circle cx="56" cy="58" r="4" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>
