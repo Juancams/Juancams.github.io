@@ -3,6 +3,23 @@
 Aquí se documentan todos los cambios relevantes de VizMini2.
 El formato sigue Keep a Changelog y el proyecto usa versionado semántico (antes de la 1.0, las versiones menores aún pueden cambiar el comportamiento).
 
+## [0.17.1] - 2026-10-10
+
+### Corregido
+- Al entrar con Microsoft o GitHub, la app podía quedarse en la pantalla de inicio de sesión con el indicador de carga girando sin pasar nunca a la pantalla principal; había que cerrarla y volver a abrirla para que reconociera la sesión. Ya entra directamente al terminar en la página de Microsoft o GitHub. El mismo problema afectaba a vincular esas cuentas desde Inicio y a confirmar el borrado de la cuenta volviendo a entrar con ellas, y también queda corregido. (Con Google no pasaba.)
+
+## [0.17.0] - 2026-10-10
+
+### Añadido
+- Entra o regístrate con Google, Microsoft o GitHub, sin tener que crear otra contraseña. La primera vez se crea tu cuenta con el nombre y el correo que da el proveedor, sin pasar por la verificación por correo.
+- Vincula desde Inicio varias formas de entrar a la misma cuenta. En la tarjeta de tu cuenta aparecen tus formas de entrar (correo y contraseña, Google, Microsoft y GitHub), cada una con un botón para vincularla o desvincularla; así, aunque un día entres con Google y otro con Microsoft, llegas siempre a la misma cuenta con tus mismos perfiles. La última forma de entrar que quede no se puede quitar, para no dejarte fuera de tu cuenta.
+- Si intentas entrar con un proveedor cuyo correo ya tiene una cuenta, la app te avisa y te explica que entres como la primera vez y vincules el nuevo método desde Inicio.
+
+### Cambiado
+- Los botones de Google, Microsoft y GitHub están tanto en la pantalla de inicio de sesión como en la de registro.
+- Los correos de verificación y de cambio de contraseña llegan en el idioma con el que estás usando la app.
+- Al eliminar la cuenta, si entraste con Google, Microsoft o GitHub se confirma volviendo a entrar con ese servicio (antes solo con la contraseña).
+
 ## [0.16.0] - 2026-10-09
 
 ### Añadido

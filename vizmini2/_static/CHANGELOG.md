@@ -3,6 +3,23 @@
 All notable changes to VizMini2 are documented here.
 The format follows Keep a Changelog, and the project uses semantic versioning (pre-1.0: minor versions may still change behaviour).
 
+## [0.17.1] - 2026-10-10
+
+### Fixed
+- When signing in with Microsoft or GitHub, the app could stay on the sign-in screen with the loading spinner turning and never move to the main screen; you had to close and reopen it for the session to be picked up. It now goes straight in once you finish on the Microsoft or GitHub page. The same problem affected linking those accounts from Home and confirming account deletion by signing in with them again, and both are fixed too. (Google was not affected.)
+
+## [0.17.0] - 2026-10-10
+
+### Added
+- Sign in or sign up with Google, Microsoft or GitHub, without having to create another password. The first time, your account is created with the name and email the provider gives, skipping email verification.
+- Link several sign-in methods to the same account from Home. Your account card lists your sign-in methods (email and password, Google, Microsoft and GitHub), each with a button to link or unlink it; so whether you sign in with Google one day and Microsoft the next, you always reach the same account with the same profiles. The last remaining method can't be removed, so you never get locked out of your account.
+- If you try to sign in with a provider whose email already has an account, the app warns you and explains to sign in the way you did the first time and link the new method from Home.
+
+### Changed
+- The Google, Microsoft and GitHub buttons are on both the sign-in and the sign-up screens.
+- Verification and password reset emails arrive in the language you are using the app in.
+- When deleting your account, if you signed in with Google, Microsoft or GitHub you confirm by signing in with that service again (previously password only).
+
 ## [0.16.0] - 2026-10-09
 
 ### Added
