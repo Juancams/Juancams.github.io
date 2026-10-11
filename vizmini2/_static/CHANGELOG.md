@@ -3,6 +3,19 @@
 All notable changes to VizMini2 are documented here.
 The format follows Keep a Changelog, and the project uses semantic versioning (pre-1.0: minor versions may still change behaviour).
 
+## [0.18.0] - 2026-10-11
+
+### Added
+- If you save, delete or sync profiles without an internet connection, the app tells you. The changes stay saved on the phone and are uploaded to the cloud on their own as soon as you are back online; meanwhile, the profiles card in Config shows that there are pending changes.
+
+### Changed
+- Once signed in, you can open the app and use your robots without an internet connection, for example connected only to the robot's Wi-Fi, and it now opens right away without waiting for the server. That offline use expires: after a while, the app asks you to connect to the internet for a moment to check your account (without typing your password again), and then you can carry on offline.
+
+### Fixed
+- Opening the app without an internet connection could sometimes sign you out, and you had to sign in again once you were back online.
+- If the account was deleted from another phone, this one kept getting in with the saved session; it now asks you to sign in again.
+- Syncing profiles without a connection stayed on "syncing…" forever.
+
 ## [0.17.1] - 2026-10-10
 
 ### Fixed

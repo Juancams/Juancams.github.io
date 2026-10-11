@@ -3,6 +3,19 @@
 Aquí se documentan todos los cambios relevantes de VizMini2.
 El formato sigue Keep a Changelog y el proyecto usa versionado semántico (antes de la 1.0, las versiones menores aún pueden cambiar el comportamiento).
 
+## [0.18.0] - 2026-10-11
+
+### Añadido
+- Si guardas, borras o sincronizas perfiles sin conexión a internet, la app te avisa. Los cambios se quedan guardados en el móvil y se suben solos a la nube en cuanto vuelves a tener conexión; mientras tanto, la tarjeta de perfiles de Ajustes indica que hay cambios pendientes.
+
+### Cambiado
+- Con la sesión iniciada puedes abrir la app y usar tus robots sin conexión a internet, por ejemplo conectado solo a la Wi-Fi del robot, y ahora entra al momento sin esperar al servidor. Ese uso sin conexión caduca: pasado un tiempo, la app te pide conectarte a internet un momento para comprobar tu cuenta (sin volver a escribir la contraseña) y después puedes seguir sin conexión.
+
+### Corregido
+- Al abrir la app sin conexión a internet, a veces se cerraba la sesión y había que volver a entrar cuando hubiera conexión.
+- Si la cuenta se eliminaba desde otro móvil, este seguía entrando con la sesión guardada; ahora pide volver a iniciar sesión.
+- Sincronizar los perfiles sin conexión se quedaba en "sincronizando…" indefinidamente.
+
 ## [0.17.1] - 2026-10-10
 
 ### Corregido
